@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate passowrd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="generator-container">
+        <div class="passowrd-generator">
+            <h3 class="title">Generate Password</h3>
+            <input type="text" id="password" readonly>
+            <div style="display: flex; flex-direction: column; width: 200px;">
+                <div class="form-control">
+                    <label for="length">Length</label>
+                    <input type="number" value="8" min="8" max="20" id="length">
+                </div>
+                <div class="form-control">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Uppercase</label>
+                </div>
+                <div class="form-control">
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">Lowercase</label>
+                </div>
+                <div class="form-control">
+                    <input type="checkbox" id="number">
+                    <label for="number">Number</label>
+                </div>
+                <div class="form-control">
+                    <input type="checkbox" id="specialChar">
+                    <label for="specialChar">Special Character</label>
+                </div>
+            </div>
+            <button id="generateBtn">Generate Password</button>
+            <button id="copyPasswordBtn">Copy Password</button>
+        </div>
+    </div>
+
+    <div class="toast">
+        <p>message</p>
+    </div>
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
